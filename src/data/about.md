@@ -1,8 +1,4 @@
-# Intro
-
-I am a software engineering student from University of Calgary
-
-## I Like
+# I Like
 
 - Power Lifting
 - Reading
