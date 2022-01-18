@@ -19,11 +19,10 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About Me</h2>
-      <p>Hi, I am Zhifan (Tom) Li,
-        I am a <a href="https://www.ucalgary.ca/future-students/undergraduate/explore-programs/software-engineering">Software Engineering Student at Univeristy of Calgary. </a>
-        Currently I am a Software Engineer Intern at <a href="https://www.tcenergy.com/">TC Energy</a>. Before TC Energy I was
-        Project Lead at AI Shading, a tech start-up company.
-        My goal is to leverage technology to create a lasting impact.
+      <p>Hi👋, I am Zhifan (Tom) Li,
+        I am a <a href="https://www.ucalgary.ca/future-students/undergraduate/explore-programs/software-engineering">Software Engineering Student at Univeristy of Calgary</a>.
+        <br />Currently I am a Software Engineer Intern at <a href="https://www.tcenergy.com/">TC Energy</a>.
+        <br />My goal is to leverage technology to create a lasting impact.
         I am a passionate worker and have always been committed to lifelong
         learning and continuous improvement.
       </p>
@@ -36,7 +35,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Zhifan (Tom) Li <Link to="/">#####zhifanli.com#####</Link>.</p>
+      <p className="copyright">&copy; Zhifan (Tom) Li <Link to="/">zhifanli.ca</Link>.</p>
     </section>
   </section>
 );

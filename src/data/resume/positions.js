@@ -1,5 +1,13 @@
 const positions = [
   {
+    company: 'TC Energy (TransCanada)',
+    position: 'Software Engineer Intern',
+    daterange: 'January 2022 - December 2022',
+    points: [
+      'Ongoing. Doing some amazing projects now.',
+    ],
+  },
+  {
     company: 'AI Shading',
     position: 'Tech Lead',
     daterange: 'June 2021 - December 2021',

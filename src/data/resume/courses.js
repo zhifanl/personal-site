@@ -20,6 +20,11 @@ const courses = [
     university: 'UofC',
   },
   {
+    title: 'Computer Organization',
+    number: 'ENCM 369',
+    university: 'UofC',
+  },
+  {
     title: 'Embedded System Interfacing',
     number: 'ENCM 511',
     university: 'UofC',

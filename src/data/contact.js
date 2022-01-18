@@ -15,7 +15,7 @@ const data = [
     icon: faGithub,
   },
   {
-    link: 'https://www.linkedin.com/in/zhifan-tom-li-7198331a7/',
+    link: 'https://www.linkedin.com/in/zhifan-tom-li',
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
