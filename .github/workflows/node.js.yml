@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [14.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -24,14 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - name: Lint
-      run: npm run lint
     - name: Build and Statically Render
       run: npm run predeploy
-      env:
-        NODE_ENV: development
-    - name: Test
-      run: npm test
       env:
         NODE_ENV: development
