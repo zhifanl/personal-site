@@ -44,5 +44,13 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+  },
+  "reactSnap": {
+  "inlineCss": true,
+  "minifyHtml": {
+    "collapseWhitespace": false,
+    "removeComments": false
+  },
+  "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
+}
 }
