@@ -23,16 +23,8 @@ jobs:
     - name: Install dependencies
       run: |
         npm ci
-        npm install -D @babel/plugin-proposal-private-property-in-object
-        npm install -g react-snap
     - name: Build and Statically Render
       run: |
-        export PATH="$PATH:$(npm bin)"
         npm run build
-        react-snap
       env:
         NODE_ENV: production
-    - name: Display package.json
-      run: cat package.json
-    - name: List installed packages
-      run: npm list --depth=0
