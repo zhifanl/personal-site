@@ -8,17 +8,16 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [20.x]  # Test against multiple versions if needed
+        node-version: [20.x]  # Test against Node.js 20.x
 
     steps:
-    - uses: actions/checkout@v3  # Latest version compatible with Node.js 20
+    - uses: actions/checkout@v4  # Updated to v4
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3  # Latest version compatible with Node.js 20
+      uses: actions/setup-node@v4  # Updated to v4
       with:
         node-version: ${{ matrix.node-version }}
     - name: Build and Statically Render
