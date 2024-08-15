@@ -12,8 +12,6 @@
     "predeploy": "npm run build && react-snap",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "lint": "eslint src",
-    "test": "react-scripts test --watchAll=false",
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js"
   },
   "dependencies": {
@@ -25,13 +23,14 @@
     "react-helmet-async": "^1.0.7",
     "react-markdown": "^5.0.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.1",
-    "react-snap": "^1.23.0"
+    "react-scripts": "^4.0.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
+    "puppeteer": "^23.1.0",
+    "react-snap": "^1.23.0",
     "source-map-explorer": "^2.5.2"
   },
   "browserslist": {
@@ -45,5 +44,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "puppeteer": {
+      "timeout": 60000
+    }
   }
 }
