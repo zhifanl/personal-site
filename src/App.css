@@ -1,3 +1,4 @@
+/* Existing styles */
 .App {
   text-align: center;
 }
@@ -56,11 +57,14 @@ body {
   color: #fff;
   text-align: center;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav a {
   color: #fff;
-  margin: 0 15px;
+  margin: 5px 15px;
   text-decoration: none;
 }
 
@@ -79,3 +83,79 @@ body {
   width: 100%;
 }
 
+/* New responsive styles */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 5px 0;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav a {
+    margin: 5px 0;
+    padding: 5px 0;
+    width: 100%;
+    border-bottom: 1px solid #555;
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+  }
+
+  .section {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+
+  .section h3 {
+    font-size: 18px;
+  }
+
+  .section p, .section li {
+    font-size: 14px;
+  }
+
+  .footer {
+    position: static;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .section h2 {
+    font-size: 18px;
+  }
+
+  .section h3 {
+    font-size: 16px;
+  }
+
+  .section p, .section li {
+    font-size: 12px;
+  }
+}
+
+/* Ensure content isn't hidden behind footer on small screens */
+body {
+  padding-bottom: 60px; /* Adjust based on your footer height */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+}
