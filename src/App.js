@@ -1,8 +1,6 @@
-import React from 'react';
 import './App.css';
 
 function App() {
-  // run nvm use 14.15.4 before running anything else
   return (
     <div>
       <header className="header">
@@ -104,9 +102,9 @@ function App() {
         <p>Enabled LLM-powered autoscaling to scale replicas based on power capping limits, current power consumption, and forecast power consumption. Tech Stack: Golang, Kubernetes, KEDA, Python, Prometheus, Webhooks, CI/CD, Docker.</p>
 
         <h3>
-          <a>
+          <p>
             LockedIn (Private - NDA)
-          </a>
+          </p>
         </h3>
         <p>Developed an advanced autonomous navigation software for vehicle operators, featuring dynamic route optimization with A* algorithm and intelligent collision avoidance using C++, Shell Scripts, and QT.</p>
 
@@ -132,8 +130,8 @@ function App() {
       <section id="contact" className="section">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:zhifanli2000@gmail.com">zhifanli2000@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/zhifan-tom-li/" target="_blank">https://www.linkedin.com/in/zhifan-tom-li/</a></p>
-        <p>GitHub: <a href="https://github.com/zhifanl" target="_blank">https://github.com/zhifanl</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/zhifan-tom-li/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/zhifan-tom-li/</a></p>
+        <p>GitHub: <a href="https://github.com/zhifanl" target="_blank" rel="noreferrer">https://github.com/zhifanl</a></p>
       </section>
 
       <footer className="footer">

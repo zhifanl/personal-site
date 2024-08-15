@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]  # Test against multiple versions if needed
+        node-version: [20.x]  # Test against multiple versions if needed
 
     steps:
     - uses: actions/checkout@v3  # Latest version compatible with Node.js 20
